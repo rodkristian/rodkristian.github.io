@@ -1,0 +1,57 @@
+body, html {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    background-color: white;
+}
+
+#circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+div{
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#circle-one{
+    background-color: blue;
+}
+
+#circle-two{
+    background-color: green;
+}
+
+#circle-three{
+    background-color: yellow;
+}
+
+#circle-four{
+    background-color: red;
+}
