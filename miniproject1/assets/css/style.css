@@ -1,0 +1,76 @@
+body, html{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-name {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#page-name, h3{
+    font-style: italic;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+#page-menu{
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#page-menu, a{
+    text-decoration: none;
+    font-style: oblique;
+    font-weight: 350;
+    color: #000000;
+}
+
+.about-me{
+    height: 100%;
+    border: 2px solid #000000;
+}
+
+.education{
+    height: 100%;
+    border: 2px solid #000000;
+}
+
+.achievements{
+    height: 100%;
+    border: 2px solid #000000;
+}
+
+.projects{
+    height: 100%;
+    border: 2px solid #000000;
+}
+
+.services{
+    height: 100%;
+    border: 2px solid #000000;
+}
+
+.contacts{
+    height: 100%;
+    border: 2px solid #000000;
+}
+
+.download-cv{
+    height: 100%;
+    border: 2px solid #000000;
+}
