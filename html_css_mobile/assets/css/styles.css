@@ -73,7 +73,7 @@ ul {
         transition: .3s linear;
     }
     main {
-        background-color: red;
+        background-color: red !important;
     }
 }
 
@@ -82,7 +82,7 @@ ul {
         background-color: red;
     }
     main{
-        background-color: green;
+        background-color: green !important;
     }
     .section-cover {
         flex-direction: row !important;
