@@ -79,10 +79,6 @@ ul {
         background-color: red;
     }
 
-    body{
-        background-color: yellow;
-    }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -102,6 +98,9 @@ ul {
     .section-cover {
         flex-direction: row-reverse !important;
         transition: .3s linear;
+    }
+    main {
+        background-color: red;
     }
 }
 
