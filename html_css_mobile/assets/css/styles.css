@@ -4,7 +4,7 @@ body, html {
 
     height: 100%;
 
-    background-color: red;
+    background-color: yellow;
 }
 
 main {
@@ -12,7 +12,7 @@ main {
     height: 100%;
     margin: 0px auto;
 
-    background-color: red;
+    background-color: green;
 }
 
 .section-cover {
@@ -20,7 +20,7 @@ main {
     height: 400px;
     margin: 0px auto;
 
-    background-color:red;
+    background-color:blue;
 
     display: flex;
     justify-content: center;
@@ -34,13 +34,13 @@ main {
 }
 
 .div-image {
-    background-color: violet;
+    background-color: red;
     background-image: url("../images/html_logo.png");
     background-size: cover;
 }
 
 .div-info {
-    background-color: brown;
+    background-color: green;
     color: #FFFFFF;
 }
 
@@ -51,6 +51,38 @@ h3 {
 ul {
     list-style: none;
     padding: 0px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .section-cover {
+        flex-direction: column !important;
+        height: 100% !important;
+        transition: .3s linear;
+        background-color: red;
+    }
+
+    main { 
+        width: 100% !important;
+        transition: .3s linear;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .section-cover {
+        flex-direction: row-reverse !important;
+        transition: .3s linear;
+    }
+
+    main{
+        width: 100% !important;
+        transition: .3s linear;
+        background-color: red;
+    }
+
+    body{
+        background-color: yellow;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -74,6 +106,12 @@ ul {
 }
 
 @media only screen and (min-width: 1200px) {
+    body{
+        background-color: red;
+    }
+    main{
+        background-color: green;
+    }
     .section-cover {
         flex-direction: row !important;
         transition: .3s linear;
