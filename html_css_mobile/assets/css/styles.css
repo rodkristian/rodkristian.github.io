@@ -74,8 +74,6 @@ ul {
     }
 
     main{
-        width: 100% !important;
-        transition: .3s linear;
         background-color: red;
     }
 
