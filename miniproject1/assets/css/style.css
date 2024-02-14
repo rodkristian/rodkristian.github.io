@@ -2,15 +2,14 @@ body, html{
     margin: 0px;
     padding: 0px;
     height: 100%;
-    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav{
-    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    color: #ffffff;
 }
 
 #page-name {
@@ -37,7 +36,47 @@ nav{
     text-decoration: none;
     font-style: oblique;
     font-weight: 350;
-    color: #000000;
+    color: #ffffff;
+}
+
+.heropage{
+    margin-top: -80px;
+    height: 70%;
+    background-image: url('https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.herocontainer{
+    width: 80%;
+    height: 70%;
+    background-color: #ffffff;
+    margin-top: 6%;
+    display: flex;
+}
+
+#heroinfo{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    background-color: aqua;
+}
+
+#heropic{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+#heropic img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 .about-me{
