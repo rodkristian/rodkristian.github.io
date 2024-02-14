@@ -72,31 +72,6 @@ ul {
         flex-direction: row-reverse !important;
         transition: .3s linear;
     }
-
-    main{
-        background-color: red;
-    }
-
-}
-
-@media only screen and (max-width: 600px) {
-    .section-cover {
-        flex-direction: column !important;
-        height: 100% !important;
-        transition: .3s linear;
-    }
-
-    main { 
-        width: 100% !important;
-        transition: .3s linear;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .section-cover {
-        flex-direction: row-reverse !important;
-        transition: .3s linear;
-    }
     main {
         background-color: red;
     }
