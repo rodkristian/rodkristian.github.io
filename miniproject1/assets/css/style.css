@@ -1,9 +1,13 @@
+/* Main Body */
+
 body, html{
     margin: 0px;
     padding: 0px;
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Navigation Bar and Hero Page */
 
 nav{
     width: 100%;
@@ -73,8 +77,8 @@ nav{
 }
 
 #heropic img{
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
 }
 
@@ -130,6 +134,8 @@ nav{
     text-align: center;
 }
 
+/* About me page */
+
 .about-me{
     height: 60%;
     display: flex;
@@ -149,7 +155,7 @@ nav{
 #hero-about h1{
     font-weight: 600;
     font-size: 35px;
-    margin: 5px auto
+    margin: 5px auto;
 }
 
 #infos{
@@ -168,7 +174,7 @@ nav{
 }
 
 #info-one p{
-    margin: 15px 0px 15px 100px;
+    margin: 15px 0px 15px 85px;
     font-size: 18px;
 }
 
@@ -186,9 +192,155 @@ nav{
     font-size: 18px;
 }
 
+/* Education page */
+
 .education{
     height: 100%;
-    border: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-edu{
+    height: 95%;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-edu h1{
+    font-weight: 600;
+    font-size: 35px;
+    margin: 5px 0px 5px 0px;
+}
+
+#hero-attained{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-infoone{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#divinfo-one{
+    height: 90%;
+    width: 45%;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divinfo-one h4{
+    margin: 5px 0px 5px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#divinfo-one p{
+    margin: 10px 0px 10px 0px;
+    font-size: 24px;
+}
+
+#divinfo-one p:last-child{
+    font-style: italic;
+}
+
+#divinfo-two{
+    height: 90%;
+    width: 45%;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divinfo-two h4{
+    margin: 5px 0px 5px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#divinfo-two p{
+    margin: 10px 0px 10px 0px;
+    font-size: 24px;
+}
+
+#divinfo-two p:last-child{
+    font-style: italic;
+}
+
+#hero-infotwo{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#divinfo-three{
+    height: 90%;
+    width: 45%;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divinfo-three h4{
+    margin: 5px 0px 5px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#divinfo-three p{
+    margin: 10px 0px 10px 0px;
+    font-size: 24px;
+}
+
+#divinfo-three p:last-child{
+    font-style: italic;
+}
+
+#divinfo-four{
+    height: 90%;
+    width: 45%;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#divinfo-four h4{
+    margin: 5px 0px 5px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#divinfo-four p{
+    margin: 10px 0px 10px 0px;
+    font-size: 24px;
+}
+
+#divinfo-four p:last-child{
+    font-style: italic;
 }
 
 .achievements{
@@ -207,11 +359,6 @@ nav{
 }
 
 .contacts{
-    height: 100%;
-    border: 2px solid #000000;
-}
-
-.download-cv{
     height: 100%;
     border: 2px solid #000000;
 }
