@@ -131,8 +131,59 @@ nav{
 }
 
 .about-me{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-about{
+    height: 85%;
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero-about h1{
+    font-weight: 600;
+    font-size: 35px;
+    margin: 5px auto
+}
+
+#infos{
+    height: 80%;
+    width: 960px;
+    margin: 5px auto;
+    display: flex;
+}
+
+#info-one{
+    width: 50%;
     height: 100%;
-    border: 2px solid #000000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#info-one p{
+    margin: 15px 0px 15px 100px;
+    font-size: 18px;
+}
+
+#info-two{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 2px solid #000000;
+}
+
+#info-two p{
+    margin: 10px 0px 10px 100px;
+    font-size: 18px;
 }
 
 .education{
