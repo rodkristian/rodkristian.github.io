@@ -1,0 +1,844 @@
+/* Main Body */
+
+body, html{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation Bar and Hero Page */
+
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#nav-bar{
+    height: 100%;
+    width: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bar h3{
+    font-weight: 450;
+    font-size: 38px;
+    font-style: oblique;
+}
+
+#page-menu{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-menu p{
+    color: #000000;
+    font-weight: 350;
+    font-size: 22px;
+    font-style: oblique;
+}
+
+#page-menu a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.heropage{
+    height: 70%;
+    background-image: url('https://images.unsplash.com/photo-1542903660-eedba2cda473?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#herocontainer{
+    width: 1024px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-div{
+    width: 80%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+#hero-pic{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-pic img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+#hero-info{
+    width: 60%;
+    height: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-info-one{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-info-one h3{
+    font-weight: 450;
+    font-size: 35px;
+    font-style: oblique;
+    margin: 5px auto;
+    color: #ffffff;
+}
+
+#hero-info-one p{
+    font-weight: 350;
+    font-size: 20px;
+    margin: 5px auto;
+    color: #ffffff;
+}
+
+#hero-info-two{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid #ffffff;
+}
+
+#hero-info-two h4{
+    font-weight: 450;
+    font-size: 28px;
+    font-style: oblique;
+    margin: 5px auto;
+    color: #ffffff;
+}
+
+/* About me page */
+
+.about-me{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-about{
+    height: 85%;
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero-about h1{
+    font-weight: 600;
+    font-size: 35px;
+    margin: 10px 0px 10px 0px;
+}
+
+#infos{
+    height: 80%;
+    width: 960px;
+    margin: 5px auto;
+    display: flex;
+}
+
+#info-one{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#info-one p{
+    margin: 15px 0px 15px 85px;
+    font-size: 18px;
+}
+
+#info-two{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 2px solid #000000;
+}
+
+#info-two p{
+    margin: 10px 0px 10px 100px;
+    font-size: 18px;
+}
+
+/* Education page */
+
+.education{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-edu{
+    height: 95%;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-edu h1{
+    font-weight: 600;
+    font-size: 35px;
+    margin: 5px 0px 5px 0px;
+}
+
+#hero-attained{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-infoone{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#divinfo-one{
+    height: 90%;
+    width: 45%;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divinfo-one h4{
+    margin: 5px 0px 5px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#divinfo-one p{
+    margin: 10px 0px 10px 0px;
+    font-size: 24px;
+}
+
+#divinfo-one p:last-child{
+    font-style: italic;
+}
+
+#divinfo-two{
+    height: 90%;
+    width: 45%;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divinfo-two h4{
+    margin: 5px 0px 5px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#divinfo-two p{
+    margin: 10px 0px 10px 0px;
+    font-size: 24px;
+}
+
+#divinfo-two p:last-child{
+    font-style: italic;
+}
+
+#hero-infotwo{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#divinfo-three{
+    height: 90%;
+    width: 45%;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divinfo-three h4{
+    margin: 5px 0px 5px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#divinfo-three p{
+    margin: 10px 0px 10px 0px;
+    font-size: 24px;
+}
+
+#divinfo-three p:last-child{
+    font-style: italic;
+}
+
+#divinfo-four{
+    height: 90%;
+    width: 45%;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#divinfo-four h4{
+    margin: 5px 0px 5px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#divinfo-four p{
+    margin: 10px 0px 10px 0px;
+    font-size: 24px;
+}
+
+#divinfo-four p:last-child{
+    font-style: italic;
+}
+
+/* Skills */
+
+.skill{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-skill{
+    height: 100%;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-skill h1{
+    font-weight: 600;
+    font-size: 35px;
+    margin: 10px 0px 10px 0px;
+}
+
+#heroskill-div-one{
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+#skill-one{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#hero-skills-one{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-skills-one h3{
+    font-weight: 400;
+    font-size: 28px;
+    font-style: oblique;
+}
+
+#heroskill-infoone{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #000000;
+}
+
+#heroskill-infoone p{
+    font-size: 18px;
+    margin-left: 35px;
+}
+
+#skill-two{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#hero-skills-two{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero-skills-two h3{
+    font-weight: 400;
+    font-size: 28px;
+    font-style: oblique;
+}
+
+#heroskill-infotwo{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #000000;
+}
+
+#heroskill-infotwo p{
+    font-size: 18px;
+    margin-left: 35px;
+}
+
+#skill-three{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#hero-skills-three{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-skills-three h3{
+    font-weight: 400;
+    font-size: 28px;
+    font-style: oblique;
+}
+
+#heroskill-infothree{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #000000;
+}
+
+#heroskill-infothree p{
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 35px;
+}
+
+#skill-four{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#hero-skills-four{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-skills-four h3{
+    font-weight: 400;
+    font-size: 28px;
+    font-style: oblique;
+}
+
+#heroskill-infofour{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 2px solid #000000;
+}
+
+#heroskill-infofour p{
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 35px;
+}
+
+/* Projects */
+
+.language{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-lang{
+    height: 100%;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-lang h1{
+    font-weight: 600;
+    font-size: 35px;
+    margin: 20px 0px 10px 0px;
+}
+
+#lang-info{
+    height: 90%;
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+}
+
+#prog-lang-divone{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#prog-one{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prog-one img{
+    height: 200px;
+    width: 200px;
+}
+
+#prog-one h4{
+    font-weight: 450;
+    font-size: 24px;
+    font-style: oblique;
+    margin: 15px 0px 15px 0px;
+}
+
+#prog-two{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prog-two img{
+    height: 200px;
+    width: 200px;
+}
+
+#prog-two h4{
+    font-weight: 450;
+    font-size: 24px;
+    font-style: oblique;
+    margin: 15px 0px 15px 0px;
+}
+
+#prog-three{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prog-three img{
+    height: 200px;
+    width: 200px;
+}
+
+#prog-three h4{
+    font-weight: 450;
+    font-size: 24px;
+    font-style: oblique;
+    margin: 15px 0px 15px 0px;
+}
+
+#prog-four{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prog-four img{
+    height: 200px;
+    width: 200px;
+}
+
+#prog-four h4{
+    font-weight: 450;
+    font-size: 24px;
+    font-style: oblique;
+    margin: 15px 0px 15px 0px;
+}
+
+#prog-lang-divtwo{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#prog-five{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prog-five img{
+    height: 200px;
+    width: 200px;
+}
+
+#prog-five h4{
+    font-weight: 450;
+    font-size: 24px;
+    font-style: oblique;
+    margin: 15px 0px 15px 0px;
+}
+
+#prog-six{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prog-six img{
+    height: 200px;
+    width: 200px;
+}
+
+#prog-six h4{
+    font-weight: 450;
+    font-size: 24px;
+    font-style: oblique;
+    margin: 15px 0px 15px 0px;
+}
+
+#prog-seven{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prog-seven img{
+    height: 200px;
+    width: 200px;
+}
+
+#prog-seven h4{
+    font-weight: 450;
+    font-size: 24px;
+    font-style: oblique;
+    margin: 15px 0px 15px 0px;
+}
+
+#prog-eight{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prog-eight img{
+    height: 200px;
+    width: 200px;
+}
+
+#prog-eight h4{
+    font-weight: 450;
+    font-size: 24px;
+    font-style: oblique;
+    margin: 15px 0px 15px 0px;
+}
+
+/* Contacts */
+
+.contacts{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-contact{
+    height: 100%;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-contact h1{
+    font-weight: 600;
+    font-size: 35px;
+    margin: 10px 0px 10px 0px;
+}
+
+#contact-info{
+    height: 90%;
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-one{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #000000;
+}
+
+#contact-one p{
+    margin: 10px auto;
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+#contact-two{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-two p{
+    margin: 10px auto;
+    font-size: 18px;
+    font-style: oblique;
+}
+
+/* Footer */
+
+.hero-footer{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#footer-div{
+    width: 1024px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #000000;
+}
+
+#icons-div{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#icons-div img{
+    height: 30px;
+    width: 30px;
+}
+
+#footer-div p{
+    font-size: 20px;
+    font-style: oblique;
+}
