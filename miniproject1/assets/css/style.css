@@ -29,6 +29,15 @@ nav{
     font-weight: 450;
     font-size: 38px;
     font-style: oblique;
+    transition: 0.5s;
+}
+
+#nav-bar h3:hover{
+    color: #808080;
+    text-shadow: 0px 0px 7px rgb(75, 75, 75),
+                 0px 0px 19px rgb(75, 75, 75),
+                 0px 0px 29px rgb(75, 75, 75),
+                 0px 0px 40px rgb(75, 75, 75);
 }
 
 #page-menu{
@@ -50,6 +59,15 @@ nav{
 #page-menu a{
     text-decoration: none;
     color: #000000;
+    transition: .4s;
+}
+
+#page-menu a:hover{
+    color: #808080;
+    text-shadow: 0px 0px 7px rgb(75, 75, 75),
+                 0px 0px 19px rgb(75, 75, 75),
+                 0px 0px 29px rgb(75, 75, 75),
+                 0px 0px 40px rgb(75, 75, 75);
 }
 
 .heropage{
