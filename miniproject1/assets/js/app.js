@@ -1,11 +1,12 @@
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav-bar").style.top = "0";
-  } else {
-    document.getElementById("nav-bar").style.top = "-80px";
-    document.getElementById("nav-bar").style.color = red;
-  }
-  prevScrollpos = currentScrollPos;
-}
+const nav = document.querySelector(".navbar");
+let lastscrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+    if(lastscrollY < window.scrollY){
+        nav.classList.add("navbar--hidden");
+    }
+    else{
+        nav.classList.remove("navbar--hidden");
+    }
+    lastscrollY = window.scrollY;
+});

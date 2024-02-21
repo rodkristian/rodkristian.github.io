@@ -1,3 +1,7 @@
+:root{
+    --height: 70px;
+}
+
 /* Main Body */
 
 body, html{
@@ -10,11 +14,20 @@ body, html{
 
 /* Navigation Bar and Hero Page */
 
-nav{
-    height: 80px;
+.navbar{
+    height: var(--height);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
+    background-color: rgba(75, 75, 75, 0.965);
+    position: fixed;
+    top: 0;
+    transition: transform .3s;
+}
+
+.navbar--hidden{
+    transform: translateY(calc(-1*var(--height)));
 }
 
 #nav-bar{
@@ -34,11 +47,11 @@ nav{
 }
 
 #nav-bar h3:hover{
-    color: #808080;
-    text-shadow: 0px 0px 7px rgb(75, 75, 75),
-                 0px 0px 19px rgb(75, 75, 75),
-                 0px 0px 29px rgb(75, 75, 75),
-                 0px 0px 40px rgb(75, 75, 75);
+    color: #ffffff;
+    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.685),
+                 0px 0px 19px rgba(255, 255, 255, 0.79),
+                 0px 0px 29px rgba(255, 255, 255, 0.87),
+                 0px 0px 40px rgba(255, 255, 255, 1);
 }
 
 #page-menu{
@@ -63,15 +76,16 @@ nav{
 }
 
 #page-menu a:hover{
-    color: #808080;
-    text-shadow: 0px 0px 7px rgb(75, 75, 75),
-                 0px 0px 19px rgb(75, 75, 75),
-                 0px 0px 29px rgb(75, 75, 75),
-                 0px 0px 40px rgb(75, 75, 75);
+    color: #ffffff;
+    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.685),
+                0px 0px 19px rgba(255, 255, 255, 0.79),
+                0px 0px 29px rgba(255, 255, 255, 0.87),
+                0px 0px 40px rgba(255, 255, 255, 1);
 }
 
 .heropage{
-    height: 70%;
+    height: 75%;
+    width: 100%;
     background-image: url('https://images.unsplash.com/photo-1542903660-eedba2cda473?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     display: flex;
@@ -90,6 +104,7 @@ nav{
 #hero-div{
     width: 80%;
     height: 75%;
+    margin-top: 65px;
     display: flex;
     flex-direction: row;
 }
@@ -103,7 +118,6 @@ nav{
 }
 
 #picture{
-    position: relative;
     width: 90%;
     height: 60%;
     border-radius: 50%;
@@ -122,12 +136,11 @@ nav{
     &::after{
         content: '';
         position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 20%;
+        height: 35%;
         border-radius: 50%;
         border-top: 4px solid #ffffff;
         animation: rotate 1s linear infinite;
-        overflow: hidden;
     }
 }
 
@@ -141,8 +154,8 @@ nav{
 }
 
 #picture img{
-    height: 300px;
-    width: 300px;
+    height: 290px;
+    width: 290px;
     border-radius: 50%;
 }
 
