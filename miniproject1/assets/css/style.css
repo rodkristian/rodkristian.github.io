@@ -917,7 +917,7 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 35px;
 }
 
 #hero-contact{
@@ -927,7 +927,6 @@ body, html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid #000000;
 }
 
 #contact-title{
