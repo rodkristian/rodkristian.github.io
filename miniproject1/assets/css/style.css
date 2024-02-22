@@ -1,7 +1,3 @@
-:root{
-    --height: 70px;
-}
-
 /* Main Body */
 
 body, html{
@@ -15,7 +11,7 @@ body, html{
 /* Navigation Bar and Hero Page */
 
 .navbar{
-    height: var(--height);
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -23,11 +19,15 @@ body, html{
     background-color: rgba(75, 75, 75, 0.965);
     position: fixed;
     top: 0;
-    transition: transform .3s;
+    transition: .3s;
 }
 
 .navbar--hidden{
-    transform: translateY(calc(-1*var(--height)));
+    transform: translateY(-70px);
+}
+
+.navbar--hide{
+    transform: translateY(-70px);
 }
 
 #nav-bar{
@@ -46,12 +46,18 @@ body, html{
     transition: 0.5s;
 }
 
-#nav-bar h3:hover{
+#nav-bar a:hover{
+    cursor: pointer;
     color: #ffffff;
     text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.685),
                  0px 0px 19px rgba(255, 255, 255, 0.79),
                  0px 0px 29px rgba(255, 255, 255, 0.87),
                  0px 0px 40px rgba(255, 255, 255, 1);
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: #000000;
 }
 
 #page-menu{
@@ -118,26 +124,22 @@ body, html{
 }
 
 #picture{
-    width: 90%;
-    height: 60%;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
 }
 
 #picture:hover{
     &::before{
         content: '';
         position: absolute;
-        border-radius: 50%;
     }
     &::after{
         content: '';
         position: absolute;
-        width: 20%;
-        height: 35%;
+        height: 300px;
+        width: 300px;
         border-radius: 50%;
         border-top: 4px solid #ffffff;
         animation: rotate 1s linear infinite;
@@ -154,8 +156,8 @@ body, html{
 }
 
 #picture img{
-    height: 290px;
-    width: 290px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
 }
 
@@ -218,6 +220,7 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 70px;
 }
 
 #hero-about{
@@ -291,16 +294,16 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 35px;
 }
 
 #hero-edu{
-    height: 100%;
+    height: 95%;
     width: 1024px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid #000000; 
 }
 
 #edu-title{
@@ -484,16 +487,16 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 35px;
 }
 
 #hero-skill{
-    height: 100%;
+    height: 95%;
     width: 1024px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid #000000;
 }
 
 #skill-title{
@@ -681,16 +684,16 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 35px;
 }
 
 #hero-lang{
-    height: 100%;
+    height: 90%;
     width: 1024px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid #000000;
 }
 
 #lang-title{
@@ -914,6 +917,7 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
 }
 
 #hero-contact{
