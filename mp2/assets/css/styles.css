@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap');
+
+:root{
+    --font-family-primary: "Kode Mono";
+    --font-family-secondary: "Anta";
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #4dbdff;
+    --color-base2: #008bff;
+    --color-brand: #fff94d;
+    --color-brand2: #fff700;
+    --sidebar-width: 250px;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-base);
+    color: var(--color-body);
+    font-family: var(--font-family-secondary), sans-serif;
+    min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover{
+    color: var(--color-brand);
+}
+
+img{
+    width: 100%;
+}
+
+/* Navbar */
+
+.navbar .nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+@media (min-width: 992px){
+    .navbar{
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background: linear-gradient(rgba(77, 189, 255, 1), rgba(77, 189, 255, 0.1)), url("../images/bg_image.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+}
