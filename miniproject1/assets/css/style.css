@@ -5,15 +5,29 @@ body, html{
     padding: 0px;
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Navigation Bar and Hero Page */
 
-nav{
-    height: 80px;
+.navbar{
+    height: 70px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
+    background-color: rgba(75, 75, 75, 0.965);
+    position: fixed;
+    top: 0;
+    transition: .3s;
+}
+
+.navbar--hidden{
+    transform: translateY(-70px);
+}
+
+.navbar--hide{
+    transform: translateY(-70px);
 }
 
 #nav-bar{
@@ -29,6 +43,21 @@ nav{
     font-weight: 450;
     font-size: 38px;
     font-style: oblique;
+    transition: 0.5s;
+}
+
+#nav-bar a:hover{
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.685),
+                 0px 0px 19px rgba(255, 255, 255, 0.79),
+                 0px 0px 29px rgba(255, 255, 255, 0.87),
+                 0px 0px 40px rgba(255, 255, 255, 1);
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: #000000;
 }
 
 #page-menu{
@@ -52,8 +81,17 @@ nav{
     color: #000000;
 }
 
+#page-menu a:hover{
+    color: #ffffff;
+    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.685),
+                0px 0px 19px rgba(255, 255, 255, 0.79),
+                0px 0px 29px rgba(255, 255, 255, 0.87),
+                0px 0px 40px rgba(255, 255, 255, 1);
+}
+
 .heropage{
-    height: 70%;
+    height: 75%;
+    width: 100%;
     background-image: url('https://images.unsplash.com/photo-1542903660-eedba2cda473?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     display: flex;
@@ -72,6 +110,7 @@ nav{
 #hero-div{
     width: 80%;
     height: 75%;
+    margin-top: 65px;
     display: flex;
     flex-direction: row;
 }
@@ -84,7 +123,39 @@ nav{
     align-items: center;
 }
 
-#hero-pic img{
+#picture{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#picture:hover{
+    &::before{
+        content: '';
+        position: absolute;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        border-top: 4px solid #ffffff;
+        animation: rotate 1s linear infinite;
+    }
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#picture img{
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -104,22 +175,22 @@ nav{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 
 #hero-info-one h3{
     font-weight: 450;
-    font-size: 35px;
+    font-size: 38px;
     font-style: oblique;
-    margin: 5px auto;
+    margin: 0px 0px -10px 0px;
     color: #ffffff;
 }
 
 #hero-info-one p{
     font-weight: 350;
-    font-size: 20px;
-    margin: 5px auto;
+    font-size: 22px;
+    margin-bottom: 25px;
     color: #ffffff;
 }
 
@@ -128,7 +199,7 @@ nav{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
     border-top: 2px solid #ffffff;
@@ -138,7 +209,7 @@ nav{
     font-weight: 450;
     font-size: 28px;
     font-style: oblique;
-    margin: 5px auto;
+    margin: 25px 0px 0px 0px;
     color: #ffffff;
 }
 
@@ -149,10 +220,11 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 70px;
 }
 
 #hero-about{
-    height: 85%;
+    height: 100%;
     width: 1024px;
     display: flex;
     align-items: center;
@@ -160,14 +232,29 @@ nav{
     flex-direction: column;
 }
 
+#hero-title{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#hero-title img{
+    width: 70px;
+    height: 70px;
+}
+
 #hero-about h1{
     font-weight: 600;
-    font-size: 35px;
-    margin: 10px 0px 10px 0px;
+    font-size: 38px;
+    margin-left: 5px;
 }
 
 #infos{
-    height: 80%;
+    height: 75%;
     width: 960px;
     margin: 5px auto;
     display: flex;
@@ -182,8 +269,8 @@ nav{
 }
 
 #info-one p{
-    margin: 15px 0px 15px 85px;
-    font-size: 18px;
+    margin: 28px 0px 15px 50px;
+    font-size: 24px;
 }
 
 #info-two{
@@ -196,8 +283,8 @@ nav{
 }
 
 #info-two p{
-    margin: 10px 0px 10px 100px;
-    font-size: 18px;
+    margin: 10px 0px 10px 40px;
+    font-size: 24px;
 }
 
 /* Education page */
@@ -207,6 +294,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 35px;
 }
 
 #hero-edu{
@@ -218,16 +306,33 @@ nav{
     align-items: center;
 }
 
-#hero-edu h1{
+#edu-title{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#edu-title img{
+    height: 70px;
+    width: 70px;
+}
+
+#edu-title h1{
     font-weight: 600;
-    font-size: 35px;
-    margin: 5px 0px 5px 0px;
+    font-size: 38px;
+    text-align: center;
+    margin-left: 5px;
 }
 
 #hero-attained{
-    height: 90%;
+    height: 85%;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -243,22 +348,28 @@ nav{
 #divinfo-one{
     height: 90%;
     width: 45%;
-    border-bottom: 2px solid #000000;
+    /* border-bottom: 2px solid #000000; */
+    border: 2px solid #000000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#divinfo-one img{
+    height: 100px;
+    width: 100px;
+}
+
 #divinfo-one h4{
-    margin: 5px 0px 5px 0px;
-    font-size: 24px;
+    margin: 10px 0px 10px 0px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 #divinfo-one p{
-    margin: 10px 0px 10px 0px;
-    font-size: 24px;
+    margin: 5px 0px 5px 0px;
+    font-size: 26px;
 }
 
 #divinfo-one p:last-child{
@@ -268,22 +379,28 @@ nav{
 #divinfo-two{
     height: 90%;
     width: 45%;
-    border-bottom: 2px solid #000000;
+    /* border-bottom: 2px solid #000000; */
+    border: 2px solid #000000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#divinfo-two img{
+    height: 100px;
+    width: 100px;
+}
+
 #divinfo-two h4{
-    margin: 5px 0px 5px 0px;
-    font-size: 24px;
+    margin: 10px 0px 10px 0px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 #divinfo-two p{
-    margin: 10px 0px 10px 0px;
-    font-size: 24px;
+    margin: 5px 0px 5px 0px;
+    font-size: 26px;
 }
 
 #divinfo-two p:last-child{
@@ -302,7 +419,8 @@ nav{
 #divinfo-three{
     height: 90%;
     width: 45%;
-    border-bottom: 2px solid #000000;
+    /* border-bottom: 2px solid #000000; */
+    border: 2px solid #000000;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -310,15 +428,20 @@ nav{
     align-items: center;
 }
 
+#divinfo-three img{
+    height: 100px;
+    width: 100px;
+}
+
 #divinfo-three h4{
-    margin: 5px 0px 5px 0px;
-    font-size: 24px;
+    margin: 10px 0px 10px 0px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 #divinfo-three p{
-    margin: 10px 0px 10px 0px;
-    font-size: 24px;
+    margin: 5px 0px 5px 0px;
+    font-size: 26px;
 }
 
 #divinfo-three p:last-child{
@@ -328,7 +451,8 @@ nav{
 #divinfo-four{
     height: 90%;
     width: 45%;
-    border-bottom: 2px solid #000000;
+    /* border-bottom: 2px solid #000000; */
+    border: 2px solid #000000;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -336,15 +460,20 @@ nav{
     align-items: center;
 }
 
+#divinfo-four img{
+    height: 100px;
+    width: 100px;
+}
+
 #divinfo-four h4{
-    margin: 5px 0px 5px 0px;
-    font-size: 24px;
+    margin: 10px 0px 10px 0px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 #divinfo-four p{
-    margin: 10px 0px 10px 0px;
-    font-size: 24px;
+    margin: 5px 0px 5px 0px;
+    font-size: 26px;
 }
 
 #divinfo-four p:last-child{
@@ -358,10 +487,11 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 35px;
 }
 
 #hero-skill{
-    height: 100%;
+    height: 95%;
     width: 1024px;
     display: flex;
     flex-direction: column;
@@ -369,21 +499,39 @@ nav{
     align-items: center;
 }
 
-#hero-skill h1{
+#skill-title{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#skill-title img{
+    height: 70px;
+    width: 70px;
+}
+
+#skill-title h1{
     font-weight: 600;
-    font-size: 35px;
-    margin: 10px 0px 10px 0px;
+    font-size: 38px;
+    text-align: center;
+    margin-left: 5px;
 }
 
 #heroskill-div-one{
-    height: 95%;
+    height: 85%;
     width: 95%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #skill-one{
-    height: 25%;
+    height: 23%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -414,12 +562,12 @@ nav{
 }
 
 #heroskill-infoone p{
-    font-size: 18px;
+    font-size: 22px;
     margin-left: 35px;
 }
 
 #skill-two{
-    height: 25%;
+    height: 23%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -450,12 +598,12 @@ nav{
 }
 
 #heroskill-infotwo p{
-    font-size: 18px;
+    font-size: 22px;
     margin-left: 35px;
 }
 
 #skill-three{
-    height: 25%;
+    height: 23%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -486,14 +634,14 @@ nav{
 }
 
 #heroskill-infothree p{
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 5px;
     margin-top: 5px;
     margin-left: 35px;
 }
 
 #skill-four{
-    height: 25%;
+    height: 23%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -523,23 +671,24 @@ nav{
 }
 
 #heroskill-infofour p{
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 5px;
     margin-top: 5px;
     margin-left: 35px;
 }
 
-/* Projects */
+/* Languages */
 
 .language{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 35px;
 }
 
 #hero-lang{
-    height: 100%;
+    height: 90%;
     width: 1024px;
     display: flex;
     flex-direction: column;
@@ -547,15 +696,30 @@ nav{
     align-items: center;
 }
 
-#hero-lang h1{
+#lang-title{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#lang-title img{
+    height: 70px;
+    width: 70px;
+}
+
+#lang-title h1{
     font-weight: 600;
-    font-size: 35px;
-    margin: 20px 0px 10px 0px;
+    font-size: 38px;
+    margin-left: 5px ;
 }
 
 #lang-info{
-    height: 90%;
-    width: 980px;
+    height: 85%;
+    width: 995px;
     display: flex;
     flex-direction: column;
 }
@@ -574,6 +738,8 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
 }
 
 #prog-one img{
@@ -728,6 +894,8 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
 }
 
 #prog-eight img{
@@ -749,6 +917,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 35px;
 }
 
 #hero-contact{
@@ -760,10 +929,25 @@ nav{
     align-items: center;
 }
 
-#hero-contact h1{
+#contact-title{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+#contact-title img{
+    height: 70px;
+    width: 70px;
+}
+
+#contact-title h1{
     font-weight: 600;
     font-size: 35px;
-    margin: 10px 0px 10px 0px;
+    margin-left: 5px;
 }
 
 #contact-info{
@@ -803,6 +987,16 @@ nav{
     margin: 10px auto;
     font-size: 18px;
     font-style: oblique;
+}
+
+#contact-two a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+
+    &:hover{
+        color: blue;
+    }
 }
 
 /* Footer */
