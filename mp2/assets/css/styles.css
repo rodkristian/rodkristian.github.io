@@ -7,7 +7,7 @@
     --color-heading: #eef3db;
     --color-base: #4dbdff;
     --color-base2: #008bff;
-    --color-brand: #fff94d;
+    --color-brand: rgba(255, 249, 77, 0.9);
     --color-brand2: #fff700;
     --sidebar-width: 250px;
 }
@@ -44,6 +44,73 @@ img{
     width: 100%;
 }
 
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgb(0, 139, 255, 0.5);
+    font-family: var(--font-family-primary);
+}
+
+.text-brand{
+    color: var(--color-brand);
+}
+
+.bg-base {
+    background-color: var(--color-base2);
+}
+
+.shadow-effect{
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover{
+    box-shadow: -6px 6px 0 0 var(--color-brand2);
+}
+
+.iconbox{
+    height:60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #000000;
+    background-color: var(--color-brand2);
+}
+
+.service{
+    height: 260px;
+}
+
+.edu{
+    height:200px;
+    background-color: var(--color-base2);
+}
+
+.skill{
+    height: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    .skill1{
+        width: 46%;
+    }
+
+    .iconfont{
+        font-size: 5rem;
+        color: #000000;
+    }
+}
+
 /* Navbar */
 
 .navbar .nav-link{
@@ -56,7 +123,6 @@ img{
     color: var(--color-brand2);
 }
 
-
 @media (min-width: 992px){
     .navbar{
         min-height: 100vh;
@@ -68,4 +134,42 @@ img{
     .navbar-brand img{
         border: 8px solid var(--color-brand);
     }
+}
+
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus{
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+.link-custom{
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after{
+    width: 100%;
 }
