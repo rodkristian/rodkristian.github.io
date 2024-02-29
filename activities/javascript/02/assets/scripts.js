@@ -8,36 +8,36 @@ let webprogramming = document.getElementById("inp-webprog");
 
 english.addEventListener('keyup', function() {
     let total = parseFloat(english.value) + parseFloat(math.value) + parseFloat(datastructure.value) + parseFloat(compprogramming.value) + parseFloat(webprogramming.value);
-    document.getElementById("tot-grade").innerText = total;
+    document.getElementById("tot-grade").value = total;
     let average = total / 5;
-    document.getElementById("ave").innerText = average;
+    document.getElementById("ave").value = average;
 });
 
 math.addEventListener('keyup', function() {
     let total = parseFloat(english.value) + parseFloat(math.value) + parseFloat(datastructure.value) + parseFloat(compprogramming.value) + parseFloat(webprogramming.value);
-    document.getElementById("tot-grade").innerText = total;
+    document.getElementById("tot-grade").value = total;
     let average = total / 5;
-    document.getElementById("ave").innerText = average;
+    document.getElementById("ave").value = average;
 });
 
 datastructure.addEventListener('keyup', function() {
     let total = parseFloat(english.value) + parseFloat(math.value) + parseFloat(datastructure.value) + parseFloat(compprogramming.value) + parseFloat(webprogramming.value);
-    document.getElementById("tot-grade").innerText = total;
+    document.getElementById("tot-grade").value = total;
     let average = total / 5;
-    document.getElementById("ave").innerText = average;
+    document.getElementById("ave").value = average;
 });
 
 compprogramming.addEventListener('keyup', function() {
     let total = parseFloat(english.value) + parseFloat(math.value) + parseFloat(datastructure.value) + parseFloat(compprogramming.value) + parseFloat(webprogramming.value);
-    document.getElementById("tot-grade").innerText = total;
+    document.getElementById("tot-grade").value = total;
     let average = total / 5;
-    document.getElementById("ave").innerText = average;
+    document.getElementById("ave").value = average;
 });
 
 webprogramming.addEventListener('keyup', function() {
     let total = parseFloat(english.value) + parseFloat(math.value) + parseFloat(datastructure.value) + parseFloat(compprogramming.value) + parseFloat(webprogramming.value);
-    document.getElementById("tot-grade").innerText = total;
+    document.getElementById("tot-grade").value = total;
     let average = total / 5;
-    document.getElementById("ave").innerText = average;
+    document.getElementById("ave").value = average;
 });
 
