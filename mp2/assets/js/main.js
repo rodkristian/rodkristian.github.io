@@ -14,9 +14,9 @@ AOS.init({
 
 });
 
-var typed = new Typed(".text-brand",{
-  strings: ["COMPUTER ENGINEER", "PROGRAMMER", "FULLSTACK WEB DEVELOPER"],
-  typeSpeed: 100,
-  backSpeed: 100,
-  loop: true
-});
+// var typed = new Typed(".text-brand",{
+//   strings: ["COMPUTER ENGINEER", "PROGRAMMER", "FULLSTACK WEB DEVELOPER"],
+//   typeSpeed: 100,
+//   backSpeed: 100,
+//   loop: true
+// });

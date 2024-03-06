@@ -122,13 +122,72 @@ img {
     }
 }
 
+@media (max-width: 990px) {
+    .prof-img{
+        height: 200px;
+        width: 200px;
+        border: 8px solid var(--color-brand);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     .prof-img{
         height: 200px;
         width: 200px;
         border: 8px solid var(--color-brand);
         margin-top: 30px;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1125px) {
+    .prof-img{
+        height: 200px;
+        width: 200px;
+        border: 8px solid var(--color-brand);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .btn {
+        padding: 12px 28px;
+        font-weight: 700;
+    }
+    
+    .btn-brand {
+        background-color: var(--color-brand);
+        border-color: var(--color-brand);
+        color: var(--color-base);
+    }
+    
+    .btn-brand:hover,
+    .btn-brand:focus {
+        background-color: var(--color-brand2);
+        color: var(--color-base);
+        border-color: var(--color-brand2);
+    }
+    
+    .link-custom {
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .link-custom::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: var(--color-brand);
+        position: absolute;
+        left: 0;
+        top: 110%;
+        transition: all 0.4s;
+    }
+    
+    .link-custom:hover::after {
+        width: 100%;
     }
 }
 
@@ -163,7 +222,55 @@ img {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-        position: relative;
+    }
+
+    .link-custom::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: var(--color-brand);
+        position: absolute;
+        left: 0;
+        top: 110%;
+        transition: all 0.4s;
+    }
+    
+    .link-custom:hover::after {
+        width: 100%;
+    }
+}
+
+@media (max-width: 770px) {
+    .prof-img{
+        height: 175px;
+        width: 175px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        padding: 12px 28px;
+        font-weight: 700;
+    }
+    
+    .btn-brand {
+        background-color: var(--color-brand);
+        border-color: var(--color-brand);
+        color: var(--color-base);
+    }
+    
+    .btn-brand:hover,
+    .btn-brand:focus {
+        background-color: var(--color-brand2);
+        color: var(--color-base);
+        border-color: var(--color-brand2);
+    }
+    
+    .link-custom {
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
     }
 
     .link-custom::after {
