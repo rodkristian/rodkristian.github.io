@@ -13,10 +13,3 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
-
-// var typed = new Typed(".text-brand",{
-//   strings: ["COMPUTER ENGINEER", "PROGRAMMER", "FULLSTACK WEB DEVELOPER"],
-//   typeSpeed: 100,
-//   backSpeed: 100,
-//   loop: true
-// });
