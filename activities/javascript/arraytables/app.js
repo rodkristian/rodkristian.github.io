@@ -9,6 +9,9 @@ document.getElementById("btn-log").addEventListener('click', function() {
     if(employeeid == "" || fullname == "" || workinghours == ""){
         alert("Input required text in text fields");
     }else{
+        document.getElementById("txtempid").value = "";
+        document.getElementById("txtfullname").value = "";
+        document.getElementById("txtworkhrs").value = "";
         empdata.push( [employeeid, fullname, workinghours] );
         outputtable();
     }
@@ -21,8 +24,8 @@ function outputtable(){
                       "<td>" + empdata[x][0] + "</td>"
                     + "<td>" + empdata[x][1] + "</td>" 
                     + "<td>" + empdata[x][2] + "</td>" 
-                    + "<td>" + "<button class='btn btn-secondary' onclick='empdeldata("+x+");'>Remove</button>" + "</td>" +
-                      "</tr>";
+                    + "<td>" + "<button class='btn btn-secondary' onclick='empdeldata("+x+");'>Remove</button>" + "<button class='btn btn-warning ms-2' onclick='empeditdata("+empdata[x]+");'>Edit</button>" + "</td>"
+                    + "</tr>";
     }
     document.getElementById("tdata").innerHTML = tabledata;
     document.getElementById("avg-hrs").innerHTML = average(avg);
@@ -43,3 +46,8 @@ function empdeldata(index) {
     empdata.splice(index, 1);
     outputtable();
 }
+
+function empeditdata(a0){
+    document.getElementById("txtempid").value = a0;
+}
+
