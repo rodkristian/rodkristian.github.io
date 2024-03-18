@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grading System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://maxst.icons8.com/vue-static/icon/favicon/icons8_fav_32×32.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Grading System</a>
+            </div>
+        </nav>
+        <main class="container mt-5">
+            <section class="row d-flex flex-row justify-content-center align-items-center">
+                <div class="col-md-4 bg-info p-5">
+                    <h3 class="mb-2">Grade Result: <span id="grades"></span></h3>
+                    <button class="btn btn-primary btn-sm" id="btnAddGrade">Add Grade</button>
+                    <button class="btn btn-warning btn-sm" id="btnCalculateGrade">Calculate</button>
+                    <button class="btn btn-danger btn-sm" id="btnRemoveGrade">Remove</button>
+                    <ul id="grade-parent"></ul>
+                </div>
+            </section>
+        </main>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
