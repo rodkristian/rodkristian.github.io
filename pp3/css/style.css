@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --color-one: #00FFEE;
+    --color-two: #00D0FF;
+    --color-three: #0091FF;
+    --color-four: #0051FF;
+    --color-five: #0011FF;
+    --color-six: #2F00FF;
+    --font-family: "Quicksand";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+  }
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--color-two);
+}
+
+.navbar{
+    font-family: var(--font-family);
+    background-color: rgba(0,0,0,0.0);
+    .title{
+        font-weight: 600;
+        font-size: 40px;
+        &:hover{
+            text-decoration: underline;
+            text-underline-offset: 3.2px;
+            text-decoration-style: solid;
+            text-decoration-color: black;
+            text-decoration-thickness: 1px; /* Set to 1 pixel */
+        }
+    }
+    .img-logo{
+        height: 40px;
+        width: 40px;
+        position: relative;
+        top: -10px;
+    }
+    .link-custom{
+        font-size: 22px;
+        position: relative;
+        transition: color .5s ease-in-out;
+        color: black;
+        &::before{
+            content: '';
+		    position: absolute;
+		    width: 100%;
+		    height: 4px;
+		    border-radius: 4px;
+            top: 110%;
+		    background-color: var(--color-four);
+		    bottom: 0;
+		    left: 0;
+            transform: scaleX(0);
+		    transform-origin: left;
+		    transition: transform .5s ease-in-out;
+        }
+        &:hover{
+            color: var(--color-four);
+        }
+        &:hover::before {
+            transform: scaleX(1);
+        }
+    }
+}
