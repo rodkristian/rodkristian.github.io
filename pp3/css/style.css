@@ -3,7 +3,7 @@
 :root{
     --color-one: #00FFEE;
     --color-two: #00D0FF;
-    --color-three: #0091FF;
+    /* --color-three: #0091FF; */
     --color-four: #0051FF;
     --color-five: #0011FF;
     --color-six: #2F00FF;
@@ -25,13 +25,43 @@
 body, html{
     margin: 0;
     padding: 0;
+    background: linear-gradient(227deg, rgba(0,208,255,0.9) 0%, rgba(255,255,255,0.9) 100%), url(../images/kitty.png);
+    background-size: cover;
+    font-family: var(--font-family), sans-serif;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
     font-family: var(--font-family);
+    color: var(--color-five);
+    font-weight: 700;
+}
+
+p{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+a{
+
+}
+
+.divider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    border: 1px solid var(--color-two);
     background-color: var(--color-two);
+    opacity: 1;
+}
+  
+.divider-light {
+    background-color: #fff;
 }
 
 .navbar{
     font-family: var(--font-family);
-    background-color: rgba(0,0,0,0.0);
     .title{
         font-weight: 600;
         font-size: 40px;
@@ -61,7 +91,7 @@ body, html{
 		    height: 4px;
 		    border-radius: 4px;
             top: 110%;
-		    background-color: var(--color-four);
+		    background-color: var(--color-six);
 		    bottom: 0;
 		    left: 0;
             transform: scaleX(0);
@@ -69,10 +99,23 @@ body, html{
 		    transition: transform .5s ease-in-out;
         }
         &:hover{
-            color: var(--color-four);
+            color: var(--color-six);
         }
         &:hover::before {
             transform: scaleX(1);
         }
     }
 }
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
