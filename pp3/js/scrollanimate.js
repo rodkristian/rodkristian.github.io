@@ -13,3 +13,10 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+const navLinks = document.querySelectorAll('.nav-item');
+const menuToggle = document.getElementById('navbarNav');
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+})
