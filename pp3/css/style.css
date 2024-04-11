@@ -3,7 +3,7 @@
 :root{
     --color-one: #00FFEE;
     --color-two: #00D0FF;
-    /* --color-three: #0091FF; */
+    --color-three: #0091FF;
     --color-four: #0051FF;
     --color-five: #0011FF;
     --color-six: #2F00FF;
@@ -22,7 +22,7 @@
     }
   }
 
-body, html{
+body{
     margin: 0;
     padding: 0;
     background: linear-gradient(227deg, rgba(0,208,255,0.9) 0%, rgba(255,255,255,0.9) 100%), url(../images/kitty.png);
@@ -30,20 +30,44 @@ body, html{
     font-family: var(--font-family), sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,h2,h3,h4,h5,h6{
     font-family: var(--font-family);
-    color: var(--color-five);
     font-weight: 700;
 }
 
 p{
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 a{
+    font-size: 18px;
+}
 
+.note{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.noteIcon{
+    font-size: 26px;
+}
+
+.addnote{
+    font-size: 48px;
+}
+
+.user_name{
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+.date_created{
+    font-family: var(--font-family);
+    font-size: 16px;
 }
 
 .divider {
@@ -61,6 +85,7 @@ a{
 
 .navbar{
     font-family: var(--font-family);
+    transition: all 0.5s;
     .title{
         font-weight: 600;
         font-size: 40px;
@@ -106,8 +131,9 @@ a{
     }
 }
 
-.navbar-shrink{
-    background-color: white;
+.navbar-scrolled{
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
 }
 
 .full-height {
@@ -117,6 +143,14 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+.full-h {
+    min-height: 100vh;
+    height: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
     border-bottom: 2px solid rgba(255,255,255, 0.1);
