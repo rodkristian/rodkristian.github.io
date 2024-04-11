@@ -99,15 +99,19 @@ function viewNote(passedNote){
     document.querySelector("#viewBody").innerHTML = body;
 }
 
-window.addEventListener('resize', () => {
+function resizeNote(){
+    window.addEventListener('resize', () => {
     let width = window.innerWidth;
     let webWidth = document.querySelector(".note");
     let webButtons = document.querySelector(".notebuttons");
     if(width <= 575){
         webWidth.className = 'note col-11';
     }else{
-        webWidth.className = 'note col-md-11 col-lg-11 col-sm-11';
+        webWidth.className = 'note col-md-11 col-11';
         webButtons.className = 'notebuttons col-1 d-flex justify-content-end align-items-center';
     }
 });
+}
+
+resizeNote();
 
