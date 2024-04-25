@@ -40,6 +40,7 @@ function noteCard(mappedNote){
                     </div>
                     <div class="card-footer">
                         <a href="" title="View Note" class="noteIcon" data-bs-toggle="modal" data-bs-target="#viewModal" onclick="viewNote('${encodeURIComponent(JSON.stringify(notes))}');"><i class="las la-edit"></i></a>
+                        <a href="" title="View Note" class="noteIcon" data-bs-toggle="modal" data-bs-target="#viewModal" onclick="Note('');"><i class="las la-edit"></i></a>
                     </div>
                 </div>
             </div>
