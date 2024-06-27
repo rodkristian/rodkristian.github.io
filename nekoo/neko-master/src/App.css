@@ -1,0 +1,23 @@
+body{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.pointclick ul li:hover{
+  background-color: grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pointclick ul li:hover a{
+  color: white;
+}
+
+.active{
+  background-color: grey;
+  border-radius: 5px;
+  color: white;
+}
+
+

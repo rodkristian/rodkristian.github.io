@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "krin",
+      "lastname": "krine",
+      "nickname": "krin",
+      "handle": "@bq"
+    },
+    {
+      "id": 2,
+      "firstname": "krin",
+      "lastname": "krine",
+      "nickname": "krinee",
+      "handle": "@alturas"
+    },
+    {
+      "id": 3,
+      "firstname": "krin",
+      "lastname": "krine",
+      "nickname": "kline",
+      "handle": "@alturas"
+    },
+    {
+      "id": "22b3",
+      "firstname": "Kron",
+      "lastname": "Ling",
+      "nickname": "Klin",
+      "handle": "@icm"
+    },
+    {
+      "id": "c09a",
+      "firstname": "Kron",
+      "lastname": "Ling",
+      "nickname": "Klin",
+      "handle": "@icm"
+    },
+    {
+      "id": "9654",
+      "firstname": "",
+      "lastname": "Ling",
+      "nickname": "Klin",
+      "handle": "@icm"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "user": "krin",
+      "type": "Laptop",
+      "brand": "Lenovo",
+      "price": 230,
+      "quantity": 23
+    },
+    {
+      "id": "8cca",
+      "user": "krin",
+      "type": "Smartphone",
+      "brand": "Samsung",
+      "price": "200",
+      "quantity": "20"
+    },
+    {
+      "id": "d81e",
+      "user": "User",
+      "type": "Laptop",
+      "brand": "Lenovo",
+      "price": "230",
+      "quantity": "20"
+    }
+  ]
+}
